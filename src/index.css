@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+#profession {
+  margin-left: 10rem;
+  text-transform: capitalize;
+}
+
+header, nav {
+  background: linear-gradient(to right, #1abc9c, black, black);
+}
+
+#main-title {
+  font-size: 2rem;
+  width: 60%;
+}
+
+#about {
+  background: linear-gradient(to left, #1abc9c, black, black);
+}
+
+#ocr {
+  color: #096ed3;
+  font-weight: bold;
+}
+
+#ocr:hover {
+  color: #1abc9c;
+}
+
+#cv, #close-cv {
+  display: none;
+  animation: fadein 1.5s;
+}
+
+#show-cv {
+  color: #1abc9c !important;
+}
+
+#show-cv:hover {
+  color: #0a81f8 !important;
+  border-color: #0a81f8 !important;
+}
+
+#name {
+  margin-left: -18rem;
+}
+
+#nav-bar {
+  margin-right: -18rem;
+}
+
+#my-face {
+  margin-right: 12rem;
+}
+
+.project-item {
+  border: solid black 1px;
+}
+
+.portfolio-item-caption:hover {
+  background-color: #0c437a !important;
+  opacity: 0.8 !important;
+}
+
+/* riddle-form */
+
+.riddle-label {
+  font-size: 2rem;
+}
+
+@keyframes fadein {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+      text-align: center;
+  }
+  #cv {
+      width: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #menu-button {
+      margin-left: 12rem;
+  }
+  #name {
+      font-size: 1rem;
+  }
+}
