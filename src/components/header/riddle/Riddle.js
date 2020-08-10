@@ -20,7 +20,7 @@ export default class Riddle extends Component {
     componentDidMount() {
         const inputs = document.querySelectorAll('.riddle-input');
         const questionsInputs = Array.prototype.slice.call(inputs);
-        this.state.questions.push(questionsInputs)
+        this.state.questions.push(questionsInputs);
         for (let i = 0; i < questionsInputs.length; i++) {
             const questions = this.state.questions.push(questionsInputs[i]);
             this.setState({ questions: questions })
@@ -97,7 +97,8 @@ export default class Riddle extends Component {
         if (target.value === 'web developer') {
             this.setState({
                 solution: true
-            })
+            });
+            this.props.isCorrect(target.value);
         } else {
             this.setState({
                 solution: false

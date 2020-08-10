@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 //import Style from '../../bootstrap/scss/layout/_navbar.scss';
 import './Navbar.css';
+import Job from './Job';
 
 export default class Navbar extends Component {
     render() {
@@ -10,8 +11,8 @@ export default class Navbar extends Component {
                 <div className="container">
 
                     <a className="navbar-brand js-scroll-trigger" id="name" href="#page-top">
-                        <h1 className="mb-n3 mt-2">Bertrand Bourion</h1><p className="text-primary animated bounce" id="profession">Web
-                developer</p>
+                        <h1 className="mb-n3 mt-2">Bertrand Bourion</h1>
+                        {this.props.isCorrect === true ? <Job /> : <></>}
                     </a>
 
                     <button id="menu-button"
