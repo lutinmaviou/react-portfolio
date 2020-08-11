@@ -28,6 +28,10 @@ header, nav {
   background: linear-gradient(to right, #1abc9c, black, black);
 }
 
+.nav-link {
+  font-size: 1.3rem;
+}
+
 #main-title {
   font-size: 2rem;
   width: 60%;
@@ -35,6 +39,10 @@ header, nav {
 
 #about {
   background: linear-gradient(to left, #1abc9c, black, black);
+}
+
+.lead {
+  color: #a5c6e7
 }
 
 #ocr {
