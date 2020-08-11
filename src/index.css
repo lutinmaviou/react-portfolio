@@ -46,8 +46,7 @@ header, nav {
   color: #1abc9c;
 }
 
-#cv, #close-cv {
-  display: none;
+.cv, #close-cv {
   animation: fadein 1.5s;
 }
 
