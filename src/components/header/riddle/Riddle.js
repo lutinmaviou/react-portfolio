@@ -92,8 +92,6 @@ export default class Riddle extends Component {
 
     handleSubmit = event => {
         const target = this.state.questions[5];
-        console.log(target.value);
-        console.log(this.state.value);
         if (target.value === 'web developer') {
             this.setState({
                 solution: true

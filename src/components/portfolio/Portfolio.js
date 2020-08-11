@@ -16,7 +16,7 @@ export default () => {
                     <div className="divider-custom">
                         <div className="divider-custom-line"></div>
                         <div className="divider-custom-icon">
-                            <StarIcon></StarIcon>
+                            <StarIcon />
                         </div>
                         <div className="divider-custom-line"></div>
                     </div>

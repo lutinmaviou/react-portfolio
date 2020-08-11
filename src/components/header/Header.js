@@ -11,6 +11,16 @@ export default class Header extends Component {
         this.state = { isCorrect: false };
     }
 
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = (e) => {
+        if (window.scrollY >= 600) {
+            this.setState({ isCorrect: true });
+        }
+    }
+
     handleIsCorrect = job => {
         job === 'web developer' ? this.setState({ isCorrect: true }) : this.setState({ isCorrect: false });
     }
@@ -20,7 +30,7 @@ export default class Header extends Component {
             <div className={Style.masthead}>
                 <header className="masthead bg-dark text-white text-center">
                     <div className="d-flex">
-                        <Navbar isCorrect={this.state.isCorrect}/>
+                        <Navbar isCorrect={this.state.isCorrect} />
                         <Riddle isCorrect={this.handleIsCorrect} />
                         <Photo />
                     </div>
