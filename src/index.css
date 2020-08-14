@@ -4,19 +4,13 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 #portfolio, #about {
   padding-top: 25vh;
-}
-
-h1 {
-  font-size: 2.3rem;
 }
 
 #profession {
@@ -47,7 +41,7 @@ header, nav {
 
 #ocr {
   color: #096ed3;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 #ocr:hover {
@@ -67,20 +61,12 @@ header, nav {
   border-color: #0a81f8 !important;
 }
 
-#name {
-  margin-left: -18rem;
-}
-
-#nav-bar {
-  margin-right: -18rem;
-}
-
 #my-face {
   margin-right: 12rem;
 }
 
 .project-item {
-  border: solid black 1px;
+  border: solid #1b83eb 1px;
 }
 
 .portfolio-item-caption:hover {
@@ -96,27 +82,36 @@ header, nav {
 
 @keyframes fadein {
   from {
-      opacity: 0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+  #profession {
+    margin-left: 5rem;
+    margin-top: -1rem !important;
   }
 }
 
 @media screen and (max-width: 768px) {
   body {
-      text-align: center;
+    text-align: center !important;
   }
-  #cv {
-      width: 300px;
+  h1 {
+    margin-left: 1rem;
+  }
+  #menu-button {
+    margin-right: 1rem;
   }
 }
 
-@media screen and (max-width: 500px) {
-  #menu-button {
-      margin-left: 12rem;
-  }
-  #name {
-      font-size: 1rem;
-  }
-}
+@media screen and (max-width: 500px) {}

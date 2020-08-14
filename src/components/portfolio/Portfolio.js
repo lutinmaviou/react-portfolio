@@ -25,6 +25,7 @@ export default () => {
 
                         <div className="col-md-6 col-lg-4">
                             <p className="text-center text-secondary font-weight-bold">Projet 1 / OpenClassrooms</p>
+                            <p className="text-center mt-n2 text-primary font-weight-bold">HTML/CSS</p>
                             <div className="portfolio-item mx-auto project-item" data-toggle="modal" data-target="#portfolioModal1">
                                 <div
                                     className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -40,6 +41,7 @@ export default () => {
 
                         <div className="col-md-6 col-lg-4">
                             <p className="text-center text-secondary font-weight-bold">Projet 2 / OpenClassrooms</p>
+                            <p className="text-center mt-n2 text-primary font-weight-bold">WORDPRESS</p>
                             <div className="portfolio-item mx-auto project-item" data-toggle="modal" data-target="#portfolioModal1">
                                 <div
                                     className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -55,6 +57,7 @@ export default () => {
 
                         <div className="col-md-6 col-lg-4">
                             <p className="text-center text-secondary font-weight-bold">Projet 3 / OpenClassrooms</p>
+                            <p className="text-center mt-n2 text-primary font-weight-bold">JS/JQUERY</p>
                             <div className="portfolio-item mx-auto project-item" data-toggle="modal" data-target="#portfolioModal1">
                                 <div
                                     className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -70,12 +73,13 @@ export default () => {
 
                         <div className="col-md-6 col-lg-4">
                             <p className="text-center text-secondary font-weight-bold">Projet 4 / OpenClassrooms</p>
+                            <p className="text-center mt-n2 text-primary font-weight-bold">PHP/MYSQL</p>
                             <div className="portfolio-item mx-auto project-item" data-toggle="modal" data-target="#portfolioModal1">
                                 <div
                                     className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                     <div className="portfolio-item-caption-content text-center text-white">
                                         <h4 id="portfolio-items">
-                                            <a href="https://writerblog.yourwebagency.fr" target="blank">Visiter le site</a><br />
+                                            <a href="https://writerblog.yourwebagency.fr" target="blank">Visiter le site</a><br /><br />
                                             <a href="https://github.com/lutinmaviou/writerBlog.git" target="blank">Le code sur GitHub</a>
                                         </h4>
                                     </div>
@@ -86,12 +90,13 @@ export default () => {
 
                         <div className="col-md-6 col-lg-4">
                             <p className="text-center text-secondary font-weight-bold">Projet 5 / OpenClassrooms</p>
+                            <p className="text-center mt-n2 text-primary font-weight-bold">PHP/SYMFONY 5</p>
                             <div className="portfolio-item mx-auto project-item" data-toggle="modal" data-target="#portfolioModal1">
                                 <div
                                     className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                     <div className="portfolio-item-caption-content text-center text-white">
                                         <h4 id="portfolio-items">
-                                            <a href="http://webotek.yourwebagency.fr" target="blank">Visiter le site</a><br />
+                                            <a href="http://webotek.yourwebagency.fr" target="blank">Visiter le site</a><br /><br />
                                             <a href="https://github.com/lutinmaviou/webotek.git" target="blank">Le code sur GitHub</a>
                                         </h4>
                                     </div>

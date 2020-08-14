@@ -108,6 +108,7 @@ export default class Riddle extends Component {
     render() {
         return (
             <div className="container d-flex align-items-center flex-column" id="header">
+                <h2 className="mt-n5 mb-5 text-primary"><u>Petite charade :</u></h2>
                 <form className="d-flex flex-column justify-content-between">
                     <div className="text-left">
                         <label className="riddle-label">Mon premier est une toile infinie :</label>

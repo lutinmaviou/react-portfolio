@@ -28,7 +28,7 @@ export default class Header extends Component {
     render() {
         return (
             <div className={Style.masthead}>
-                <header className="masthead bg-dark text-white text-center">
+                <header className="masthead bg-dark text-white text-center" id="page-top">
                     <div className="d-flex">
                         <Navbar isCorrect={this.state.isCorrect} />
                         <Riddle isCorrect={this.handleIsCorrect} />
