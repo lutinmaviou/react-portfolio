@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Navbar.css';
 import Job from './Job';
+import BarsIcon from './BarsIcon';
 
 export default class Navbar extends Component {
     render() {
@@ -17,16 +18,16 @@ export default class Navbar extends Component {
                         className="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded text-right"
                         type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                        <span><BarsIcon /></span>
                     </button>
 
                     <div className="collapse navbar-collapse justify-content-end mr-lg-5 mt-md-n3" id="navbarResponsive">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" href="#portfolio">Portfolio</a>
+                                <a className="nav-link mr-md-3" href="#portfolio">Portfolio</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#about">À propos</a>
+                                <a className="nav-link mr-md-3" href="#about">À propos</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#contact">Contact</a>
