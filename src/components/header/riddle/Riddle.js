@@ -30,10 +30,10 @@ class Riddle extends Component {
     }
 
     handleChange = event => {
-        const step = event.target.name;
-        switch (step) {
+        const value = event.target.value.toLowerCase();
+        switch (event.target.name) {
             case 'first-step': {
-                if (event.target.value === 'web') {
+                if ( value === 'dés' || value === 'des') {
                     this.setState({
                         firstAnswer: true
                     })
@@ -44,7 +44,7 @@ class Riddle extends Component {
                 }
             } break;
             case 'second-step': {
-                if (event.target.value === 'dés') {
+                if (value === 'voeu') {
                     this.setState({
                         secondAnswer: true
                     })
@@ -55,7 +55,7 @@ class Riddle extends Component {
                 }
             } break;
             case 'third-step': {
-                if (event.target.value === 'veule') {
+                if (value === 'l\eau' || value === 'eau') {
                     this.setState({
                         thirdAnswer: true
                     })
@@ -66,7 +66,7 @@ class Riddle extends Component {
                 }
             } break;
             case 'fourth-step': {
-                if (event.target.value === 'eau') {
+                if (value === 'peur') {
                     this.setState({
                         fourthAnswer: true
                     })
@@ -77,7 +77,7 @@ class Riddle extends Component {
                 }
             } break;
             case 'fifth-step': {
-                if (event.target.value === 'peur') {
+                if (value === 'web') {
                     this.setState({
                         fifthAnswer: true
                     })
@@ -93,11 +93,12 @@ class Riddle extends Component {
 
     handleSubmit = event => {
         const target = this.state.questions[5];
-        if (target.value === 'web developer') {
+        const value = target.value.toLowerCase();
+        if (value === 'développeur web' || value === 'developpeur web') {
             this.setState({
                 solution: true
             });
-            this.props.isCorrect(target.value);
+            this.props.isCorrect(value);
         } else {
             this.setState({
                 solution: false
@@ -113,27 +114,27 @@ class Riddle extends Component {
                 <h2 className="mt-lg-n5 mb-5 text-primary"><u>Petite charade :</u></h2>
                 <form>
                     <div className="text-lg-left">
-                        <label className="riddle-label">Mon premier est une toile infinie :</label>
+                        <label className="riddle-label">Mes premiers servent à jouer au Craps ou au 421 :</label>
                         <input className="ml-3 riddle-input" type="text" name="first-step" onChange={this.handleChange} />
                         {this.state.firstAnswer === null ? <></> : this.state.firstAnswer === false ? (<FalseIcon />) : (<TrueIcon />)}
                     </div>
                     <div className="text-lg-left">
-                        <label className="riddle-label">Mes deuxièmes servent à jouer au Craps ou au 421 :</label>
+                        <label className="riddle-label">Mon deuxième se fait devant une étoile filante :</label>
                         <input className="ml-3 riddle-input" type="text" name="second-step" onChange={this.handleChange} />
                         {this.state.secondAnswer === null ? <></> : this.state.secondAnswer === false ? (<FalseIcon />) : (<TrueIcon />)}
                     </div>
                     <div className="text-lg-left">
-                        <label className="riddle-label">Mon troisième se fait devant une étoile filante :</label>
+                        <label className="riddle-label">Mon troisième est un des 4 éléments naturels :</label>
                         <input className="ml-3 riddle-input" type="text" name="third-step" onChange={this.handleChange} />
                         {this.state.thirdAnswer === null ? <></> : this.state.thirdAnswer === false ? (<FalseIcon />) : (<TrueIcon />)}
                     </div>
                     <div className="text-lg-left">
-                        <label className="riddle-label">Mon quatrième est un élément vital :</label>
+                        <label className="riddle-label">Mon quatrième se ressent devant un film d'horreur :</label>
                         <input className="ml-3 riddle-input" type="text" name="fourth-step" onChange={this.handleChange} />
                         {this.state.fourthAnswer === null ? <></> : this.state.fourthAnswer === false ? (<FalseIcon />) : (<TrueIcon />)}
                     </div>
                     <div className="text-lg-left">
-                        <label className="riddle-label">Mon cinquième se ressent devant un film d'horreur :</label>
+                        <label className="riddle-label">Mon cinquième est une toile tissée à l'infini :</label>
                         <input className="ml-3 riddle-input" type="text" name="fifth-step" onChange={this.handleChange} />
                         {this.state.fifthAnswer === null ? <></> : this.state.fifthAnswer === false ? (<FalseIcon />) : (<TrueIcon />)}
                     </div>

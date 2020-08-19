@@ -22,7 +22,7 @@ export default class Header extends Component {
     }
 
     handleIsCorrect = job => {
-        job === 'web developer' ? this.setState({ isCorrect: true }) : this.setState({ isCorrect: false });
+        job === 'développeur web' || job === 'developpeur web' ? this.setState({ isCorrect: true }) : this.setState({ isCorrect: false });
     }
 
     render() {
