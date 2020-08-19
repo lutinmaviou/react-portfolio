@@ -107,7 +107,7 @@ class Riddle extends Component {
     }
 
     render() {
-        if (this.props.isMobile()) return <h2 className="mt-5 text-warning W-75 mx-auto">BONJOUR ET BIENVENUE !</h2>;
+        if (this.props.isMobile()) return <h2 className="mt-5 text-warning animated rubberBand">BIENVENUE !</h2>;
         return (
             <div className="container d-flex align-items-center flex-column" id="header">
                 <h2 className="mt-lg-n5 mb-5 text-primary"><u>Petite charade :</u></h2>
