@@ -29,10 +29,10 @@ export default class Header extends Component {
         return (
             <div className={Style.masthead}>
                 <header className="masthead bg-dark text-white text-center" id="page-top">
-                    <div className="d-flex">
-                        <Navbar isCorrect={this.state.isCorrect} />
-                        <Riddle isCorrect={this.handleIsCorrect} />
+                    <Navbar isCorrect={this.state.isCorrect} />
+                    <div className="d-lg-flex">
                         <Photo />
+                        <Riddle isCorrect={this.handleIsCorrect} />
                     </div>
                 </header>
             </div>

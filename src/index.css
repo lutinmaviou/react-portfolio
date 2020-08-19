@@ -61,9 +61,9 @@ header, nav {
   border-color: #0a81f8 !important;
 }
 
-#my-face {
-  margin-right: 12rem;
-}
+/* #my-face {
+  margin-left: 12rem;
+} */
 
 .project-item {
   border: solid #1b83eb 1px;
@@ -77,7 +77,7 @@ header, nav {
 /* riddle-form */
 
 .riddle-label {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 @keyframes fadein {
@@ -86,6 +86,15 @@ header, nav {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1264px){
+  .riddle-label{
+    font-size: 1.2rem;
+  }
+  #my-face{
+    width: 200px;
   }
 }
 
@@ -112,6 +121,23 @@ header, nav {
   #menu-button {
     margin-right: 1rem;
   }
+  #portfolio, #about, #contact {
+    padding-top: 30vh;
+  }
 }
 
-@media screen and (max-width: 500px) {}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1rem !important;
+  }
+  #profession {
+    font-size: 0.8rem;
+    margin-top: -1vh !important
+  }
+}
+
+@media screen and (max-width: 500px) {
+ #portfolio{
+   padding-top: 15vh;;
+ }
+}

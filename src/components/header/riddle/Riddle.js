@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import './Riddle.css';
 import TrueIcon from './icons/TrueIcon';
 import FalseIcon from './icons/FalseIcon';
+import {withGetScreen} from 'react-getscreen';
 
-export default class Riddle extends Component {
+class Riddle extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -106,36 +107,37 @@ export default class Riddle extends Component {
     }
 
     render() {
+        if (this.props.isMobile()) return <h2 className="mt-5 text-warning W-75 mx-auto">BONJOUR ET BIENVENUE !</h2>;
         return (
             <div className="container d-flex align-items-center flex-column" id="header">
-                <h2 className="mt-n5 mb-5 text-primary"><u>Petite charade :</u></h2>
-                <form className="d-flex flex-column justify-content-between">
-                    <div className="text-left">
+                <h2 className="mt-lg-n5 mb-5 text-primary"><u>Petite charade :</u></h2>
+                <form>
+                    <div className="text-lg-left">
                         <label className="riddle-label">Mon premier est une toile infinie :</label>
                         <input className="ml-3 riddle-input" type="text" name="first-step" onChange={this.handleChange} />
                         {this.state.firstAnswer === null ? <></> : this.state.firstAnswer === false ? (<FalseIcon />) : (<TrueIcon />)}
                     </div>
-                    <div className="text-left">
-                        <label className="riddle-label">Mes cinquièmes servent à jouer au Craps ou au 421 :</label>
+                    <div className="text-lg-left">
+                        <label className="riddle-label">Mes deuxièmes servent à jouer au Craps ou au 421 :</label>
                         <input className="ml-3 riddle-input" type="text" name="second-step" onChange={this.handleChange} />
                         {this.state.secondAnswer === null ? <></> : this.state.secondAnswer === false ? (<FalseIcon />) : (<TrueIcon />)}
                     </div>
-                    <div className="text-left">
-                        <label className="riddle-label">Mon troisième n'a aucune énergie / volonté :</label>
+                    <div className="text-lg-left">
+                        <label className="riddle-label">Mon troisième se fait devant une étoile filante :</label>
                         <input className="ml-3 riddle-input" type="text" name="third-step" onChange={this.handleChange} />
                         {this.state.thirdAnswer === null ? <></> : this.state.thirdAnswer === false ? (<FalseIcon />) : (<TrueIcon />)}
                     </div>
-                    <div className="text-left">
-                        <label className="riddle-label">Mon troisième est un élément vital :</label>
+                    <div className="text-lg-left">
+                        <label className="riddle-label">Mon quatrième est un élément vital :</label>
                         <input className="ml-3 riddle-input" type="text" name="fourth-step" onChange={this.handleChange} />
                         {this.state.fourthAnswer === null ? <></> : this.state.fourthAnswer === false ? (<FalseIcon />) : (<TrueIcon />)}
                     </div>
-                    <div className="text-left">
-                        <label className="riddle-label">Mon quatrième se ressent devant un film d'horreur :</label>
+                    <div className="text-lg-left">
+                        <label className="riddle-label">Mon cinquième se ressent devant un film d'horreur :</label>
                         <input className="ml-3 riddle-input" type="text" name="fifth-step" onChange={this.handleChange} />
                         {this.state.fifthAnswer === null ? <></> : this.state.fifthAnswer === false ? (<FalseIcon />) : (<TrueIcon />)}
                     </div>
-                    <div className="text-left">
+                    <div className="text-lg-left">
                         <label htmlFor="riddle-whole" id="riddle-solution" className="riddle-label font-weight-bold">Mon tout est mon métier :</label>
                         <input id="riddle-whole" className="ml-3 riddle-input" type="text" name="last-step" onChange={this.handleChange} />
                         <i className="fas fa-check fa-2x text-success ml-3"></i>
@@ -147,3 +149,5 @@ export default class Riddle extends Component {
         )
     }
 }
+
+export default withGetScreen(Riddle);
