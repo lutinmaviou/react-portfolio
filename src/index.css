@@ -9,7 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#portfolio, #about {
+#portfolio, #about, #contact {
   padding-top: 25vh;
 }
 
@@ -129,6 +129,9 @@ header, nav {
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 1rem !important;
+  }
+  h2 {
+    font-size: 1.6rem !important;
   }
   #profession {
     font-size: 0.8rem;

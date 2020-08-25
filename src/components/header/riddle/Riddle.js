@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Riddle.css';
 import TrueIcon from './icons/TrueIcon';
 import FalseIcon from './icons/FalseIcon';
-import {withGetScreen} from 'react-getscreen';
+import { withGetScreen } from 'react-getscreen';
 
 class Riddle extends Component {
     constructor(props) {
@@ -30,10 +30,10 @@ class Riddle extends Component {
     }
 
     handleChange = event => {
-        const value = event.target.value.toLowerCase();
+        const value = event.target.value.toLowerCase().trim();
         switch (event.target.name) {
             case 'first-step': {
-                if ( value === 'dés' || value === 'des') {
+                if (value === 'dés' || value === 'des') {
                     this.setState({
                         firstAnswer: true
                     })
@@ -44,7 +44,7 @@ class Riddle extends Component {
                 }
             } break;
             case 'second-step': {
-                if (value === 'voeu') {
+                if (value === 'voeu' || value === 'vœu') {
                     this.setState({
                         secondAnswer: true
                     })
@@ -55,7 +55,7 @@ class Riddle extends Component {
                 }
             } break;
             case 'third-step': {
-                if (value === 'l\'eau' || value === 'eau') {
+                if (value === "l'eau" || value === 'eau') {
                     this.setState({
                         thirdAnswer: true
                     })

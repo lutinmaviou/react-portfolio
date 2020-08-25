@@ -32,24 +32,29 @@ export default class About extends Component {
 
                         <div className="row">
                             <div className="col-lg-4 ml-auto">
-                                <p className="lead font-weight-bolder text-md-center text-lg-left">Ancien professionnel de la restauration, j'ai décidé en 2019 de me reconvertir dans
-                                la programmation de sites web et applications. Le titre de développeur web m'est désormais acquis
-                                grâce au parcours
-                                du même nom que j'ai suivi par correspondance avec l'école
+                                <p className="lead font-weight-bolder text-md-center text-lg-left">
+                                    Ancien professionnel de la restauration, j'ai décidé en 2019 de me reconvertir dans
+                                    la programmation de sites web et applications. Le titre de développeur web m'est désormais acquis grâce au parcours
+                                    du même nom que j'ai suivi par correspondance avec l'école
 						<a href="https://openclassrooms.com/fr/paths/48-developpeur-web-junior" target="blank"
                                         id="ocr"> Openclassrooms</a>
                                 </p>
                             </div>
                             <div className="col-lg-4 mr-auto">
-                                <p className="lead font-weight-bolder text-lg-right text-md-center">Ce site est destiné à en savoir un peu sur moi et découvrir mes réalisations.
-                                Mon temps étant désormais consacré à la création de divers projets, la section portfolio devrait
-						s'enrichir régulièrement, car je suis définitivement passionné par ce nouveau métier !</p>
+                                <p className="lead font-weight-bolder text-lg-right text-md-center">
+                                    Cette page est destinée à en savoir un peu plus sur moi et découvrir mes réalisations.
+                                    Mon temps étant désormais consacré à la création de divers projets, la section portfolio devrait
+						            s'enrichir régulièrement, car je suis définitivement passionné par ce nouveau métier !</p>
                             </div>
                         </div>
                         <div className="text-center mt-4">
-                            <a onClick={this.handleShowCv} id="show-cv" className="btn btn-xl btn-outline-light rounded js-scroll-trigger" href="#myCv">
+                            <a
+                                onClick={this.handleShowCv}
+                                id="show-cv"
+                                className="btn btn-xl btn-outline-light rounded js-scroll-trigger"
+                                href="#myCv">
                                 Voir mon CV
-				    </a>
+				            </a>
                         </div>
                     </div>
                 </section>

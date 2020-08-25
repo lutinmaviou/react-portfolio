@@ -41,7 +41,7 @@ const ContactForm = () => (
                 }}
                 onSubmit={(values, { setSubmitting }) => {
                     setTimeout(() => {
-                        alert(JSON.stringify(values, null, 2));
+                        alert('Message envoyé !');
                         setSubmitting(false);
                     }, 400);
                 }}

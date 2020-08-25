@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# credentials
+/server/config.js
+
 # production
 /build
 
