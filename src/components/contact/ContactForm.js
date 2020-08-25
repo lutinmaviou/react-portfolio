@@ -135,7 +135,7 @@ const ContactForm = () => (
                                     <div className="text-center">
                                         <button
                                             type="submit" disabled={isSubmitting}
-                                            className="btn btn-primary btn-sm mt-5 mb-4">
+                                            className="btn btn-primary btn-sm mt-5 mb-md-5">
                                             Envoyer
                                     </button>
                                     </div>

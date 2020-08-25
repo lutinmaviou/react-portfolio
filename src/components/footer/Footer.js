@@ -21,20 +21,19 @@ export default () => {
                             target="blank">
                             <Github />
                         </a>
-                        <a className="btn btn-outline-light btn-social mx-1" href="https://twitter.com/bourionbertrand"
+                        <a className="btn btn-outline-light btn-social mx-1" href="https://linkedin.com/in/lutinmaviou"
                             target="blank">
                             <LinkedIn />
                         </a>
-                        <a className="btn btn-outline-light btn-social mx-1" href="https://linkedin.com/in/lutinmaviou"
+                        <a className="btn btn-outline-light btn-social mx-1" href="https://twitter.com/bourionbertrand"
                             target="blank">
                             <Twitter />
                         </a>
                     </div>
 
-                    <div className="col-lg-4">
-                        <h4 className="text-uppercase mb-4">About Freelancer</h4>
-                        <p className="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
-						<a href="http://startbootstrap.com"> Start Bootstrap</a>.</p>
+                    <div className="col-lg-4 mb-5 mb-lg-0">
+                        <h4 className="text-uppercase mb-4">Telephone</h4>
+                        <p className="lead mb-0">+33 (0)6 72 95 36 64</p>
                     </div>
                 </div>
             </div>
