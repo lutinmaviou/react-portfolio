@@ -146,6 +146,9 @@ const ContactForm = () => (
                     )}
             </Formik>
 
+<h4 className="text-center text-warning mt-5 mb-2">Pas encore fonctionnel... Bientôt !</h4>
+<h4 className="text-center text-secondary">bertrandbou@hotmail.fr</h4>
+
         </div>
     </section>
 );

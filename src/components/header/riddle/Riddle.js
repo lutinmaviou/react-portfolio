@@ -110,8 +110,14 @@ class Riddle extends Component {
     render() {
         if (this.props.isMobile()) return <h2 className="mt-5 text-warning animated rubberBand" id="welcome-text">BIENVENUE !</h2>;
         return (
-            <div className="container d-flex align-items-center flex-column" id="header">
-                <h2 className="mt-lg-n5 mb-5 text-primary"><u>Petite charade :</u></h2>
+
+            /* <div className="container d-flex align-items-center flex-column justify-content-center" id="header">
+                <h2 className="text-warning">Une petite devinette ?</h2>
+                <button className="btn btn-dark w-25 mt-5">Jouer</button>
+            </div> */
+
+            <div className="container d-flex align-items-center flex-column justify-content-center" id="header">
+                <h2 className="mt-lg-n5 mb-5 text-warning"><u>Charade :</u></h2>
                 <form>
                     <div className="text-lg-left">
                         <label className="riddle-label">Mes premiers servent à jouer au Craps ou au 421 :</label>
@@ -143,11 +149,14 @@ class Riddle extends Component {
                         <input id="riddle-whole" className="ml-3 riddle-input" type="text" name="last-step" onChange={this.handleChange} />
                         <i className="fas fa-check fa-2x text-success ml-3"></i>
                     </div>
-                    <button onClick={this.handleSubmit} className="btn btn-dark mt-5 w-50 mx-auto" href="#value">Vérifier</button>
+                    <div className="d-flex">
+                        <button onClick={this.handleSubmit} className="btn btn-dark text-primary mt-5 w-50 mx-auto" id="riddle-verify-btn-text" href="#value">Vérifier</button>
+                        <button className="btn btn-dark text-danger mt-5 w-25 mx-auto riddle-btn-text" id="riddle-hide-btn-text">Masquer</button>
+                    </div>
                 </form>
                 {this.state.solution === null ? <></> : this.state.solution === false ? <h2 id="value" className="text-danger mt-5 mb-n4 animated rubberBand">OUCH !</h2> : <h2 className="text-success mt-5 mb-n4 animated rubberBand">BRAVO !!!</h2>}
             </div>
-        )
+        );
     }
 }
 

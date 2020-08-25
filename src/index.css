@@ -70,6 +70,10 @@ header, nav {
   opacity: 0.8 !important;
 }
 
+#riddle-hide-btn-text {
+  font-size: 1.2rem !important;
+}
+
 /* riddle-form */
 
 .riddle-label {
@@ -123,6 +127,12 @@ header, nav {
   }
   #portfolio, #about, #contact {
     padding-top: 20vh;
+  }
+  #riddle-verify-btn-text {
+    font-size: 1rem !important;
+  }
+  #riddle-hide-btn-text {
+    font-size: 0.8rem !important;
   }
 }
 
