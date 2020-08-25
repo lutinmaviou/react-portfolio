@@ -145,7 +145,7 @@ class Riddle extends Component {
                     </div>
                     <button onClick={this.handleSubmit} className="btn btn-dark mt-5 w-50 mx-auto" href="#value">Vérifier</button>
                 </form>
-                {this.state.solution === null ? <></> : this.state.solution === false ? <h2 id="value" className="text-danger mt-5 mb-n4">OUCH !</h2> : <h2 className="text-success mt-5 mb-n4">BRAVO !!!</h2>}
+                {this.state.solution === null ? <></> : this.state.solution === false ? <h2 id="value" className="text-danger mt-5 mb-n4 animated rubberBand">OUCH !</h2> : <h2 className="text-success mt-5 mb-n4 animated rubberBand">BRAVO !!!</h2>}
             </div>
         )
     }
