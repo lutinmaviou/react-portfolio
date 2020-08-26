@@ -1,5 +1,6 @@
 import React from 'react';
 import StarIcon from '../../icons/StarIcon';
+import LinkIcon from '../../icons/LinkIcon';
 import P1 from '../../shared/img/projects/P1.PNG';
 import P2 from '../../shared/img/projects/P2.PNG';
 import P3 from '../../shared/img/projects/P3.PNG';
@@ -105,6 +106,30 @@ export default () => {
                             </div>
                         </div>
 
+                    </div>
+
+                    <div className="text-warning text-center">
+                        <h2 className="text-center text-secondary mt-5 mb-5">
+                            <a href="https://github.com/lutinmaviou" target="blank">Un peu de code sur github 
+                        <LinkIcon/></a></h2>
+
+                        {/*  <h5>Le code de cette page en <span className="text-primary">React</span><a className="ml-3" target="blank"><LinkIcon /></a></h5>
+
+                        <h5>Une application de recherche de films réalisée avec <span className="text-primary">React</span>
+                            <a className="ml-3"><LinkIcon /></a>
+                        </h5>
+
+                        <h5>Une application de recherche de cocktails réalisée avec <span className="text-primary">Angular V9</span>
+                            <a className="ml-3"><LinkIcon /></a>
+                        </h5>
+
+                        <h5>Une API REST réalisée avec <span className="text-primary">Node.js et Angular</span>
+                            <a className="ml-3"><LinkIcon /></a>
+                        </h5>
+
+                        <h5>Une page simple en HTML/CSS pour un restaurant de vente à emporter <span className="text-primary">Node.js et Angular </span>
+                            <a className="ml-3"><LinkIcon /></a>
+                        </h5> */}
                     </div>
 
                 </div>
