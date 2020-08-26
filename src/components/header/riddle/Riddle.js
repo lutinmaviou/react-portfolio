@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import './Riddle.css';
 import TrueIcon from './icons/TrueIcon';
 import FalseIcon from './icons/FalseIcon';
-import { withGetScreen } from 'react-getscreen';
 
-class Riddle extends Component {
+export default class Riddle extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -14,7 +13,8 @@ class Riddle extends Component {
             thirdAnswer: null,
             fourthAnswer: null,
             fifthAnswer: null,
-            solution: null
+            solution: null,
+            showRiddle: true
         }
     }
 
@@ -107,16 +107,14 @@ class Riddle extends Component {
         event.preventDefault();
     }
 
+    showHideRiddle = () => {
+        this.setState({ showRiddle: false });
+        this.props.showRiddle();
+    }
+
     render() {
-        if (this.props.isMobile()) return <h2 className="mt-5 text-warning animated rubberBand" id="welcome-text">BIENVENUE !</h2>;
         return (
-
-            /* <div className="container d-flex align-items-center flex-column justify-content-center" id="header">
-                <h2 className="text-warning">Une petite devinette ?</h2>
-                <button className="btn btn-dark w-25 mt-5">Jouer</button>
-            </div> */
-
-            <div className="container d-flex align-items-center flex-column justify-content-center" id="header">
+            <div className="animated fadeIn">
                 <h2 className="mt-lg-n5 mb-5 text-warning"><u>Charade :</u></h2>
                 <form>
                     <div className="text-lg-left">
@@ -151,19 +149,16 @@ class Riddle extends Component {
                     </div>
                     <div className="d-flex">
                         <button onClick={this.handleSubmit} className="btn btn-dark text-primary mt-5 w-50 mx-auto" id="riddle-verify-btn-text" href="#value">Vérifier</button>
-                        <button className="btn btn-dark text-danger mt-5 w-25 mx-auto riddle-btn-text" id="riddle-hide-btn-text">Masquer</button>
+                        <button onClick={this.showHideRiddle} className="btn btn-dark text-danger mt-5 w-25 mx-auto riddle-btn-text" id="riddle-hide-btn-text">Masquer</button>
                     </div>
                 </form>
-                {this.state.solution === null ? <></> : this.state.solution === false ? <h2 id="value" className="text-danger mt-5 mb-n4 animated rubberBand">OUCH !</h2> : <h2 className="text-success mt-5 mb-n4 animated rubberBand">BRAVO !!!</h2>}
+                {this.state.solution === null ? <></> : this.state.solution === false ? <h2 id="value" className="text-danger mt-5 mb-n4 animated rubberBand">OUCH !</h2> : <><h2 className="text-success mt-5 mb-n4 animated rubberBand">BRAVO !!!</h2><br /><span>dés - voeu - l'eau - peur - web</span></>}
             </div>
         );
     }
 }
 
-export default withGetScreen(Riddle);
 
 // TODO //
 
-// Réduire la taille des input et y afficher le mot correct
 // Régler le problème de répétition de code (mon premier etc.)
-// Donner la possibiliter de masquer la charade avec un bouton "masquer" / ou de l'afficher avec un bouton "jouer"
