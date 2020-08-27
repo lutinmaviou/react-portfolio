@@ -1,11 +1,17 @@
 import React from 'react';
 import StarIcon from '../../icons/StarIcon';
 import LinkIcon from '../../icons/LinkIcon';
+import P1Mini from '../../shared/img/projects/P1-mini.png';
+import P2Mini from '../../shared/img/projects/P2-mini.png';
+import P3Mini from '../../shared/img/projects/P3-mini.png';
+import P4Mini from '../../shared/img/projects/P4-mini.png';
+import P5Mini from '../../shared/img/projects/P5-mini.png';
 import P1 from '../../shared/img/projects/P1.PNG';
 import P2 from '../../shared/img/projects/P2.PNG';
 import P3 from '../../shared/img/projects/P3.PNG';
 import P4 from '../../shared/img/projects/P4.PNG';
 import P5 from '../../shared/img/projects/P5.PNG';
+import ProgressiveImage from 'react-progressive-image';
 
 export default () => {
     return (
@@ -22,7 +28,7 @@ export default () => {
                         <div className="divider-custom-line"></div>
                     </div>
 
-                    <div className="row">
+                    <div className="row mt-5">
 
                         <div className="col-md-6 col-lg-4">
                             <p className="text-center text-secondary font-weight-bold">Projet 1 / OpenClassrooms</p>
@@ -36,7 +42,9 @@ export default () => {
                                         </h4>
                                     </div>
                                 </div>
-                                <img src={P1} alt="Projet 1" className="img-fluid"></img>
+                                <ProgressiveImage src={P1} placeholder={P1Mini}>
+                                    {src => <img src={src} alt="Projet 1" width="500px" className="img-fluid" />}
+                                </ProgressiveImage>
                             </div>
                         </div>
 
@@ -52,7 +60,9 @@ export default () => {
                                         </h4>
                                     </div>
                                 </div>
-                                <img src={P2} alt="Projet 2" className="img-fluid"></img>
+                                <ProgressiveImage src={P2} placeholder={P2Mini}>
+                                    {src => <img src={src} alt="Projet 2" width="500px" className="img-fluid" />}
+                                </ProgressiveImage>
                             </div>
                         </div>
 
@@ -68,7 +78,9 @@ export default () => {
                                         </h4>
                                     </div>
                                 </div>
-                                <img src={P3} alt="Projet 3" className="img-fluid"></img>
+                                <ProgressiveImage src={P3} placeholder={P3Mini}>
+                                    {src => <img src={src} alt="Projet 3" width="500px" className="img-fluid" />}
+                                </ProgressiveImage>
                             </div>
                         </div>
 
@@ -85,7 +97,9 @@ export default () => {
                                         </h4>
                                     </div>
                                 </div>
-                                <img src={P4} alt="Projet 4" className="img-fluid"></img>
+                                <ProgressiveImage src={P4} placeholder={P4Mini}>
+                                    {src => <img src={src} alt="Projet 4" width="500px" className="img-fluid" />}
+                                </ProgressiveImage>
                             </div>
                         </div>
 
@@ -102,16 +116,23 @@ export default () => {
                                         </h4>
                                     </div>
                                 </div>
-                                <img src={P5} alt="Projet 5" className="img-fluid"></img>
+                                <ProgressiveImage src={P5} placeholder={P5Mini}>
+                                    {src => <img src={src} alt="Projet 5" width="500px" className="img-fluid" />}
+                                </ProgressiveImage>
                             </div>
                         </div>
 
                     </div>
 
-                    <div className="text-warning text-center">
+                    <div className="text-secondary text-center">
                         <h2 className="text-center text-secondary mt-5 mb-5">
-                            <a href="https://github.com/lutinmaviou" target="blank">Un peu de code sur github 
-                        <LinkIcon/></a></h2>
+                            <a href="https://github.com/lutinmaviou/react-portfolio" target="blank">Le code de cette page développée en React
+                        <LinkIcon /></a></h2>
+
+                        <h2 className="text-center text-secondary mt-5 mb-5">
+                            <a href="https://github.com/lutinmaviou" target="blank">D'autres projets sur GitHub
+                        <LinkIcon /></a></h2>
+
 
                         {/*  <h5>Le code de cette page en <span className="text-primary">React</span><a className="ml-3" target="blank"><LinkIcon /></a></h5>
 
