@@ -6,11 +6,11 @@ import BarsIcon from './BarsIcon';
 export default class Navbar extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-md bg-secondary text-uppercase fixed-top" id="mainNav">
+            <nav className="navbar navbar-expand-md text-uppercase fixed-top" id="mainNav">
                 <div className="container-fluid">
 
                     <a className="navbar-brand js-scroll-trigger" href="#page-top">
-                        <h1 className="ml-lg-5" id="name">Bertrand Bourion</h1>
+                        <h1 className="ml-lg-2" id="name">Bertrand Bourion</h1>
                         {this.props.isCorrect === true ? <Job /> : <></>}
                     </a>
 

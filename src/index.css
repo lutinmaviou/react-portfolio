@@ -9,6 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  color: silver;
+}
+
 #portfolio, #about, #contact {
   padding-top: 25vh;
 }
@@ -19,7 +23,8 @@ body {
 }
 
 header, nav {
-  background: linear-gradient(to right, #1abc9c, black, black);
+  background-color: #11947a;
+  border-left: 6rem solid rgba(0, 0, 39, 0.931);
 }
 
 .nav-link {
@@ -32,7 +37,8 @@ header, nav {
 }
 
 #about {
-  background: linear-gradient(to left, #1abc9c, black, black);
+  background-color: rgba(0, 0, 39, 0.931);
+  border-right: 6rem solid #11947a;
 }
 
 .lead {
@@ -90,20 +96,31 @@ header, nav {
 }
 
 @media screen and (max-width: 1264px) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
   .riddle-label {
     font-size: 1.2rem;
   }
   #my-face {
     width: 200px;
   }
+  header, nav {
+    background-color: #11947a;
+    border-left: 3rem solid rgba(0, 0, 39, 0.931);
+  }
+  #about {
+    background-color: rgba(0, 0, 39, 0.931);
+    border-right: 3rem solid #11947a;
+  }
+  .github-links {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
-  h1 {
-    font-size: 2rem !important;
-  }
   .nav-link {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   #profession {
     margin-left: 5rem;
@@ -112,6 +129,9 @@ header, nav {
   .riddle-label {
     font-size: 1rem;
     font-weight: bold;
+  }
+  #myCV {
+    width: 100% !important;
   }
 }
 
@@ -152,6 +172,14 @@ header, nav {
   }
   #welcome-text {
     margin-top: 4vh !important;
+  }
+  header, nav {
+    background-color: #11947a;
+    border-left: 1rem solid rgba(0, 0, 39, 0.931);
+  }
+  #about {
+    background-color: rgba(0, 0, 39, 0.931);
+    border-right: 1rem solid #11947a;
   }
 }
 

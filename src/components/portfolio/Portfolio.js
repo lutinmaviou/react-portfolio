@@ -126,11 +126,11 @@ export default () => {
 
                     <div className="text-secondary text-center">
                         <h2 className="text-center text-secondary mt-5 mb-5">
-                            <a href="https://github.com/lutinmaviou/react-portfolio" target="blank">Le code de cette page développée en React
+                            <a href="https://github.com/lutinmaviou/react-portfolio" className="github-links" target="blank">Le code de cette page développée en React
                         <LinkIcon /></a></h2>
 
                         <h2 className="text-center text-secondary mt-5 mb-5">
-                            <a href="https://github.com/lutinmaviou" target="blank">D'autres projets sur GitHub
+                            <a href="https://github.com/lutinmaviou" className="github-links" target="blank">D'autres projets sur GitHub
                         <LinkIcon /></a></h2>
 
 

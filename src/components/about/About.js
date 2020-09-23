@@ -19,7 +19,7 @@ export default class About extends Component {
     render() {
         return (
             <>
-                <section className="page-section bg-primary text-white mb-0" id="about">
+                <section className="page-section text-white mb-0 animated slideInUp" id="about">
                     <div className="container">
 
                         <h2 className="page-section-heading text-center text-uppercase text-white">À propos de moi</h2>

@@ -42,7 +42,7 @@ class Header extends Component {
         if (this.props.isMobile())
             return (
                 <div className={Style.masthead}>
-                    <header className="masthead bg-dark text-white text-center" id="page-top">
+                    <header className="masthead text-white text-center" id="page-top">
                         <Navbar isCorrect={this.state.isCorrect} />
                         <div className="d-lg-flex">
                             <Photo />
@@ -53,11 +53,11 @@ class Header extends Component {
             );
         return (
             <div className={Style.masthead}>
-                <header className="masthead bg-dark text-white text-center" id="page-top">
+                <header className="masthead text-white text-center" id="page-top">
                     <Navbar isCorrect={this.state.isCorrect} />
                     <div className="d-lg-flex">
                         <Photo />
-                        <div className="container d-flex align-items-center flex-column justify-content-center" id="header">
+                        <div className="container d-flex align-items-center flex-column justify-content-center animated slideInRight" id="header">
                             {this.state.showRiddle === false ? (<NoRiddle showRiddle={this.handleShowRiddle} />) : (<Riddle showRiddle={this.handleHideRiddle} isCorrect={this.handleIsCorrect} />)}
                         </div>
                     </div>
